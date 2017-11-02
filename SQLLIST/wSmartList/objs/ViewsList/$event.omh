@@ -1,0 +1,19 @@
+On evClick     ;; Event Parameters - pRow ( Itemreference )
+	Switch iViewsList.$line
+		Case 1
+			Do method ShowAllRows
+		Case 2
+			Do method ShowUpdatedRows
+		Case 3
+			Do method ShowUnchangedRows
+		Case 4
+			Do method ShowInsertedRows
+		Case 5
+			Do method ShowDeletedRows
+		Case 6
+			Do method HideDeletedRows
+	End Switch
+	
+	
+On evRMouseDown
+	Set reference iObjRef to $cobj

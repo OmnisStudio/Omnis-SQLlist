@@ -1,0 +1,3 @@
+;  commit any inserts, updates and deletes made to the smartlist to the server table defined in the schema class
+Do iCustomerList.$dowork()
+Do $cwind.$objs.CustomerList.$redraw(kTrue,kTrue)

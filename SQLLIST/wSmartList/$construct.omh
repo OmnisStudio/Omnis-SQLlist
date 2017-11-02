@@ -1,0 +1,11 @@
+;  smart list sample window
+
+;  setup view dropdown list
+Do iViewsList.$define(iView)
+Do iViewsList.$add('Show All Rows')
+Do iViewsList.$add('Show Updated Rows Only')
+Do iViewsList.$add('Show Unchanged Rows Only')
+Do iViewsList.$add('Show Inserted Rows Only')
+Do iViewsList.$add('Show Deleted Rows Only')
+Do iViewsList.$add('Hide Deleted Rows')
+Do iViewsList.$line.$assign(1)

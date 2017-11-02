@@ -1,0 +1,2 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Do method RevertChanges     ;; click on this line and press F8 to view the method 'RevertChanges'

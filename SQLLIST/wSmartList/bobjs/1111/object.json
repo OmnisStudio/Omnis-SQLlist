@@ -1,0 +1,27 @@
+{
+	"ident": 1111,
+	"order": 16390,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kCenterJst",
+		"backcolor": "kColor3DFace",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 19,
+		"left": 0,
+		"objlink": 84017156,
+		"text": "Post Code",
+		"textcolor": "kColorWindowText",
+		"top": 0,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 100
+	}
+}

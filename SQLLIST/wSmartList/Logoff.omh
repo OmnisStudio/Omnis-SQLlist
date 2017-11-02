@@ -1,0 +1,14 @@
+;  close the sqlite session "SQLLIST" and clear the contents of the smartlist
+Do iSessObj.$logoff()
+
+Do iCustomerList.$clear()
+Do $cwind.$redraw()
+
+;  enable the "Logon" push button and disable others
+Do $cwind.$objs.Logon.$enabled.$assign(kTrue)
+Do $cwind.$objs.Logoff.$enabled.$assign(kFalse)
+Do $cwind.$objs.ViewsList.$enabled.$assign(kFalse)
+Do $cwind.$objs.Delete.$enabled.$assign(kFalse)
+Do $cwind.$objs.Add.$enabled.$assign(kFalse)
+Do $cwind.$objs.Revert.$enabled.$assign(kFalse)
+Do $cwind.$objs.Commit.$enabled.$assign(kFalse)

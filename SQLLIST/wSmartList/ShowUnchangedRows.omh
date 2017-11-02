@@ -1,0 +1,3 @@
+;  only show unchanged rows of data in the smartlist
+Do iCustomerList.$includelines(kRowUnchanged)
+Do $cwind.$objs.CustomerList.$redraw(kTrue,kTrue)

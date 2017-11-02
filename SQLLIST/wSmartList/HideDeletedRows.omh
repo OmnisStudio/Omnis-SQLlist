@@ -1,0 +1,4 @@
+;  do not show deleted rows of data in the smartlist
+Do iCustomerList.$includelines(kRowAll)
+Do iCustomerList.$filter($ref.$status<>kRowDeleted) Returns #F
+Do $cwind.$objs.CustomerList.$redraw(kTrue,kTrue)

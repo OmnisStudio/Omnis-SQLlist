@@ -1,0 +1,21 @@
+;  About this window
+;
+;  This window demonstrates the use of the List Variable, with its $smartlist property set to kTrue
+;  to track changes the user makes to the list.
+;
+;  In order for a List variable to be a Smartlist, it must be defined from a sql class, such as a schema.
+;
+;  When the $smartlist property is true, the list can be thought of as having two components, the normal
+;  list, and the history list.  The normal list displays what the user expects to see: data they've retreived
+;  changes they've made, new rows they've added, and to have deleted rows dissapear.  The history list
+;  contains all of information from the normal list, plus information about each row that has been changed
+;  or deleted.  For changed rows, a copy of the original values of the row are kept, so that the original
+;  row can be located in the database, and to ensure that no other user has modified it in the meantime.
+;  For deleted rows, the original values are also maintained, again so the record can be located and
+;  its data validated prior to deletion.
+
+;  As rows are inserted or updated, each rows $status property is set to reflect what has occured to that row.
+;  When a row is deleted, the status is set to kRowDeleted, and the row is made invisible in the normal list.
+;
+;  The dropdown list on the window uses additional attributes of Smartlists to show and hide rows depending
+;  on their $status.

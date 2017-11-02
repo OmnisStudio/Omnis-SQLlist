@@ -1,0 +1,3 @@
+;  undo any inserts, updates and deletes made to the smartlist
+Do iCustomerList.$undowork()
+Do $cwind.$objs.CustomerList.$redraw(kTrue,kTrue)

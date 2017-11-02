@@ -1,0 +1,27 @@
+{
+	"ident": 1105,
+	"order": 16386,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kCenterJst",
+		"backcolor": "kColor3DFace",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 19,
+		"left": 1,
+		"objlink": 16908292,
+		"text": "ID",
+		"textcolor": "kColorWindowText",
+		"top": 0,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 40
+	}
+}

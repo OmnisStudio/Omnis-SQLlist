@@ -1,0 +1,3 @@
+;  show rows of deleted data in the smartlist
+Do iCustomerList.$includelines(kRowDeleted)
+Do $cwind.$objs.CustomerList.$redraw(kTrue,kTrue)

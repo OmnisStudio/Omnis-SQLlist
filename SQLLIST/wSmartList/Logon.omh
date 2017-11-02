@@ -1,0 +1,39 @@
+;  find the path to this library file and substitute our sqlite database 'sqllist.db' for the libary file name
+Calculate lPath as sys(10)
+Calculate lPath as con(mid(lPath,1,len(lPath)-3),'db')
+
+;  ram 22/4/16 - no longer required for cocoa
+;  open a sqllite session 'SQLLIST' to the sqlite database 'sqllist.db'
+;  If sys(6)='X'     ;; sqlite requires posix path on osx
+;  Do FileOps.$converthfspathtoposixpath(lPath,lPath)
+;  End If
+
+Do iSessObj.$logon(lPath,'','','SQLLIST') Returns #F
+If flag false
+	OK message  (Icon) {Could not locate 'sqllist.db'.  Please ensure that 'sqllist.db' is in the same directory as this example library and try again.}
+	Close library {[$clib().$name]}
+End If
+
+;  define the list variable as the schema class "Customer"
+Do iCustomerList.$definefromsqlclass("Customer")
+Do iCustomerList.$sessionobject.$assign(iSessObj)
+
+;  create an initial select table
+Do iCustomerList.$select()
+
+;  fetch all data from the select table
+Do iCustomerList.$fetch(50) Returns lStatus
+
+;  set the $smartlist property to true so that we can track changes on a row by row basis
+Do iCustomerList.$smartlist.$assign(kTrue)
+
+;  disable the "Logon" push button and enable others
+Do $cwind.$objs.Logon.$enabled.$assign(kFalse)
+Do $cwind.$objs.Logoff.$enabled.$assign(kTrue)
+Do $cwind.$objs.ViewsList.$enabled.$assign(kTrue)
+Do $cwind.$objs.Delete.$enabled.$assign(kTrue)
+Do $cwind.$objs.Add.$enabled.$assign(kTrue)
+Do $cwind.$objs.Revert.$enabled.$assign(kTrue)
+Do $cwind.$objs.Commit.$enabled.$assign(kTrue)
+
+Do $cwind.$redraw()

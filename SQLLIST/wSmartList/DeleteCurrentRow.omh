@@ -1,0 +1,4 @@
+;  delete the current row of data from the smartlist
+Do iCustomerList.$remove(iCustomerList.$line)
+Do iCustomerList.$line.$assign(0)
+Do $cwind.$objs.CustomerList.$redraw(kTrue,kTrue)
