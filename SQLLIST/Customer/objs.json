@@ -1,0 +1,114 @@
+[
+	{
+		"name": "CustomerID",
+		"ident": 32001,
+		"order": 1,
+		"type": "kSequence",
+		"subtype": 0,
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": true,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "CustomerName",
+		"ident": 32002,
+		"order": 2,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "CustomerAddress",
+		"ident": 32003,
+		"order": 3,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "CustomerCity",
+		"ident": 32004,
+		"order": 4,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "CustomerState",
+		"ident": 32005,
+		"order": 5,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "CustomerPostCode",
+		"ident": 32006,
+		"order": 6,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "CustomerPhone",
+		"ident": 32007,
+		"order": 7,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "CustomerFax",
+		"ident": 32008,
+		"order": 8,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	}
+]
